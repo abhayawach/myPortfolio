@@ -1,0 +1,125 @@
+.skillsSection {
+  background: white;
+  color: #333;
+  position: relative;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+  color: #333;
+  margin-bottom: 1rem !important;
+}
+
+.sectionTitle .highlight {
+  color: #4dabf7;
+}
+
+.sectionTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: #4dabf7;
+  border-radius: 2px;
+}
+
+.skillsIntro {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.skillCard {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  height: 100%;
+  transition: all 0.3s ease;
+  border: 1px solid #eaeaea;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skillCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.skillHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.iconWrapper {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+}
+
+.skillIcon {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+.skillName {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0;
+  color: #333;
+}
+
+.progressContainer {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 20px;
+}
+
+.skillImpact {
+  text-align: center;
+  margin-top: auto;
+  width: 100%;
+}
+
+.impactText {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+@media (max-width: 768px) {
+  .sectionTitle {
+    font-size: 2rem;
+  }
+  
+  .skillCard {
+    padding: 20px;
+  }
+  
+  .skillsIntro {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    padding: 0 15px;
+  }
+}

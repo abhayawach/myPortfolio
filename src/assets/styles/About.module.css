@@ -1,0 +1,184 @@
+.aboutSection {
+  background-color: #f8f9fa;
+}
+
+.sectionHeader {
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.sectionSubtitle {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #4dabf7;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #212529;
+  position: relative;
+}
+
+.sectionDivider {
+  width: 80px;
+  height: 4px;
+  background: #4dabf7;
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+.aboutImageCol {
+  position: relative;
+}
+
+.aboutImageWrapper {
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.aboutImage {
+  width: 80%;
+  height: 400px;
+  border-radius: 15px;
+  background: url('../images/myprofile.jpg') no-repeat center center/cover;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.experienceBadge {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  background: #4dabf7;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 20px rgba(77, 171, 247, 0.3);
+  z-index: 2;
+}
+
+.years {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.text {
+  font-size: 0.8rem;
+  opacity: 0.9;
+}
+
+.aboutTabs {
+  display: flex;
+  gap: 10px;
+}
+
+.tabBtn {
+  padding: 8px 20px;
+  background: transparent;
+  border: 1px solid #adb5bd;
+  border-radius: 30px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.tabBtn.active {
+  background: #4dabf7;
+  color: white;
+  border-color: #4dabf7;
+}
+
+.aboutHeading {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #212529;
+}
+
+.aboutText {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  color: #495057;
+}
+
+.skillItem {
+  margin-bottom: 1rem;
+}
+
+.skillHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skillProgress {
+  height: 8px;
+  border-radius: 4px;
+  background-color: #e9ecef;
+}
+
+.skillProgress .progress-bar {
+  background-color: #4dabf7;
+}
+
+.statCard {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.statCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.statIcon {
+  width: 50px;
+  height: 50px;
+  background: rgba(77, 171, 247, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  color: #4dabf7;
+  font-size: 1.2rem;
+}
+
+.statContent h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0;
+  color: #212529;
+}
+
+.statContent p {
+  margin-bottom: 0;
+  color: #adb5bd;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .sectionTitle {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .aboutImageWrapper {
+    margin-bottom: 3rem;
+  }
+}

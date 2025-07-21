@@ -1,0 +1,157 @@
+.projectsSection {
+  background-color: #f8f9fa;
+}
+
+.sectionHeader {
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.sectionSubtitle {
+  display: block;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #4dabf7;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #212529;
+  position: relative;
+}
+
+.sectionDivider {
+  width: 80px;
+  height: 4px;
+  background: #4dabf7;
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+.projectCard {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  height: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.projectCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.projectImageWrapper {
+  position: relative;
+  overflow: hidden;
+  height: 250px;
+}
+
+.projectImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.projectCard:hover .projectImage {
+  transform: scale(1.1);
+}
+
+.projectOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(77, 171, 247, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.projectCard:hover .projectOverlay {
+  opacity: 1;
+}
+
+.projectLinks {
+  display: flex;
+  gap: 20px;
+}
+
+.projectLink {
+  width: 50px;
+  height: 50px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4dabf7;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.projectLink:hover {
+  background: #212529;
+  color: white;
+  transform: translateY(-5px);
+}
+
+.projectContent {
+  padding: 25px;
+}
+
+.projectTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #212529;
+}
+
+.projectDescription {
+  color: #adb5bd;
+  margin-bottom: 15px;
+}
+
+.projectTechnologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.techBadge {
+  background: #f8f9fa;
+  padding: 5px 12px;
+  border-radius: 30px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.viewAllBtn {
+  background-color: #4dabf7;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.viewAllBtn:hover {
+  background-color: #339af0;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(77, 171, 247, 0.3);
+}
+
+@media (max-width: 768px) {
+  .sectionTitle {
+    font-size: 2rem;
+  }
+}
