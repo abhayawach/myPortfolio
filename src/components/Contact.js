@@ -24,7 +24,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className={styles.contactLabel}>ADDRESS</h3>
-                  <p className={styles.contactText}>Pune<br />41048</p>
+                  <p className={styles.contactText}>Pune<br />411048</p>
                 </div>
               </div>
               
